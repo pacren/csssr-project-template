@@ -1,0 +1,9 @@
+include ../container/container
+include ../logo/logo
+include ../nav/nav
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+container.header__container
+			+logo лого
+			+nav

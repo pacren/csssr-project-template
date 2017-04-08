@@ -1,0 +1,16 @@
+.nav
+	display flex
+	justify-content space-between
+	width 100%
+	max-width 50%
+	+below(containerWidth)
+		max-width 60%
+	a
+		color #fff
+		text-decoration none
+		transition .2s ease
+		border-bottom 1px solid fade-out(#fff, 70%)
+		&:hover
+			color yellow
+			border-bottom 1px solid fade-out(yellow, 70%)
+
