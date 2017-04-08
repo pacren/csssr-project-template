@@ -10,8 +10,15 @@ git clone git@github.com:CSSSR/csssr-project-template.git new-project && cd new-
 ```
 
 ### Установи модули
+
 ```
 npm i
+```
+
+или в разы в быстрее c [yarn](https://github.com/yarnpkg/yarn)
+
+```
+yarn install
 ```
 
 ### Запусти шаблон
@@ -77,6 +84,10 @@ npm run clean
 ```
 npm run deploy
 ```
+
+## Git hooks
+Используется [husky](https://github.com/typicode/husky). Перед каждым `git push` запускается линтер.
+Если линтер падает с ошибкой, `git push` не пройдет. Пропустить линтинг можно, используя `git push --no-verify`.
 
 
 ## Структура папок и файлов
